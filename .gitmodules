@@ -1,0 +1,3 @@
+[submodule "MozData"]
+	path = MozData
+	url = git@github.com:tomer/mozilla_button_creator.git
