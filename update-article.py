@@ -16,7 +16,7 @@ class wikiConnector:
         self.mwuser = config.get('main', 'mwuser')
         self.mwpass = config.get('main', 'mwpass')
         
-        self.articlesPrefix = 'sandbox/'
+        self.articlesPrefix = ''
         self.login(self.mwhost,self.mwpath,self.mwuser,self.mwpass)
         
     def readConfig(self, configFilename = 'config.ini'):
@@ -54,7 +54,7 @@ class wikiConnector:
         
     def sync_file_to_wiki(self, filename, articleName, editMessage = 'Updating from API'):
         fileContent = self.file_get(filename)       
-        #self.update_article(articleName, fileContent, editMessage)
+        self.update_article(articleName, fileContent, editMessage)
     
     def sync_files_to_wiki(self, path = os.getcwd(), matchPattern = r'.*\.wiki', articlePattern = r'^([^\.]*)\..*$', editMessage = 'Updating from API'):
         folderContent = os.listdir(path)
@@ -64,10 +64,10 @@ class wikiConnector:
             if (matchFiles.match(filename)):
                 #print ("Match! "+ filename)
                 articleName = articleNaming.match(filename+'.').groups()[0]
-                self.sync_file_to_wiki(filename, self.articlesPrefix + articleName, editMessage)
+                self.sync_file_to_wiki(path + filename, self.articlesPrefix + articleName, editMessage)
             #else: print ("unmatch - "+ filename)
             
             
 
 w = wikiConnector()
-w.sync_files_to_wiki('.', r'^.*\.wiki(\..*)?$')
+w.sync_files_to_wiki('out/', r'^.*\.wiki(\..*)?$')
