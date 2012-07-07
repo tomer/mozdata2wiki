@@ -9,7 +9,7 @@
 
 [[קטגוריה:תבניות שמתעדכנות אוטומטית]]
 
-עדכון אחרון לדף על־ידי [[משתמש:{{subst:REVISIONUSER}}|{{subst:REVISIONUSER}}]] בתאריך {{subst:REVISIONDAY2}}/{{subst:REVISIONMONTH}}/{{subst:REVISIONYEAR}}. נא לא לעדכן את הדף ידנית אם לא התבקשתם לעשות זאת.
+עדכון אחרון לדף על־ידי [[משתמש:{{subst:REVISIONUSER}}|{{subst:REVISIONUSER}}]] בתאריך {{REVISIONDAY2}}/{{REVISIONMONTH}}/{{REVISIONYEAR}}. נא לא לעדכן את הדף ידנית אם לא התבקשתם לעשות זאת.
 
 </noinclude>
 <includeonly>
