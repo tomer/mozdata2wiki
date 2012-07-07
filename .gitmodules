@@ -1,3 +1,6 @@
 [submodule "MozData"]
 	path = MozData
 	url = git@github.com:tomer/mozilla_button_creator.git
+[submodule "mwbot"]
+	path = mwbot
+	url = git@github.com:tomer/mwbot.git
