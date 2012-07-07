@@ -54,7 +54,7 @@ class wikiConnector:
         
     def sync_file_to_wiki(self, filename, articleName, editMessage = 'Updating from API'):
         fileContent = self.file_get(filename)       
-        self.update_article(articleName, fileContent, editMessage)
+        #self.update_article(articleName, fileContent, editMessage)
     
     def sync_files_to_wiki(self, path = os.getcwd(), matchPattern = r'.*\.wiki', articlePattern = r'^([^\.]*)\..*$', editMessage = 'Updating from API'):
         folderContent = os.listdir(path)
