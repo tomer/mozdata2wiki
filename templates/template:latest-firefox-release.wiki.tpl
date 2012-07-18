@@ -4,6 +4,8 @@
 כדי להציג את המידע בדף, יש להוסיף את הקריאה לתבנית בדף המבוקש.
 
 <nowiki>{{</nowiki>{{subst:PAGENAME}}<nowiki>}}</nowiki>
+
+[[Special:WhatLinksHere/{{FULLPAGENAME}}|רשימת הדפים המשתמשים בתבנית זו]]
 == פלט ==
 {{ {{subst:PAGENAME}} }}
 
